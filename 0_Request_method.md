@@ -15,17 +15,13 @@
 key is :3a7a3bba647fb6fbc28f6687d78212e2                 
 You can also confirm your signature algorithm with above strings in [this page](http://md5jiami.51240.com/) 
 
-## 2. Non OAuth 2.0 Interface              
- + 1. Based on interface documentation, Use GET Or POST to do the request.                             
+## 2. How to do the request.
+ + 1. Based on interface documentation, Use GET Or POST to do the request. (In most case is POST.)
  + 2．For any files upload interfaces,Content-Type needs to be set as multipart/form-data .                      
  + 3． If not specified, http header needs 2 following parameters:               
  X-QF-APPCODE: Allocate to developer the appcode.      
  X-QF-SIGN:Data signature, The signature based on the algorithm        
 
-## 3. OAuth 2.0 Interface
- + 1.Based on standard OAuth process, user will redirect to /oauth/v2/authorize interface, in addition with parameters like appid, scope and redirect_url.
- + 2.After user authorization, it will redirect user to redirect_uri, with code parameter.
- + 3.Use code to get access_token 
 
 
 
